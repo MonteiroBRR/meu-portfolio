@@ -26,7 +26,7 @@ strong{
     color: #22D4FD;
 }
 
-img{
+.foto_do_portfolio{
     width: 500px;
     height: 400px;
     border-width: 7px;
@@ -51,19 +51,47 @@ img{
 
 .botoes-links{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.botoes-links-subtitulo{
+    font-size: 24px;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
 }
 
 .botoes{
-    background-color: #22D4FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
     width: 280px;
     font-size: 24px;
     font-weight: 600;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     border-radius: 16px;
-    border: 1px solid black;
+    border: 1px solid #22D4FD;
     padding: 21.5px 0px;
     text-decoration: none;
+    color: #f6f6f6;
+}
+
+.botoes:hover{
+    background: #000000;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    font-size: 24px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background: #22D4FD;
+    height: 80px;
     color: #000000;
 }
