@@ -17,7 +17,7 @@
 }
 
 .cabecalho {
-    padding: 15px 0 0 15%;
+    padding: 2% 0 0 15%;
 }
 
 .cabecalho-menu {
@@ -26,7 +26,7 @@
 }
 
 .cabecalho-menu-links {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--font-secundaria);
     font-weight: 600;
     text-decoration: none;
@@ -36,17 +36,16 @@
 body {
     background-image: linear-gradient(var(--cor-primaria), 20%, var(--cor-terciaria));
     color: var(--cor-secundaria);
-    height: 100vh;
     box-sizing: border-box;
 }
 
-h1 {
-    font-size: 36px;
+.apresentacao-conteudo-titulo{
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
 p {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--font-secundaria);
 }
 
@@ -55,10 +54,10 @@ strong {
 }
 
 .foto_do_portfolio {
-    width: 550px;
-    height: 400px;
-    border-width: 7px;
-    border-radius: 5px;
+    width: 43%;
+    height: 30%;
+    border-width: 0.4rem;
+    border-radius: 0.3rem;
     border-left-style: solid;
     border-bottom-style: solid;
     border-color: var(--cor-primaria);
@@ -69,10 +68,11 @@ strong {
     align-items: center;
     justify-content: space-between;
     margin: 5% 15%;
+    gap: 80px;
 }
 
 .apresentacao-conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -86,7 +86,7 @@ strong {
 }
 
 .botoes-links-subtitulo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-primaria);
     font-weight: 400;
 }
@@ -96,12 +96,12 @@ strong {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    width: 280px;
-    font-size: 24px;
+    width: 50%;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
     font-family: var(--font-secundaria);
-    border-radius: 16px;
+    border-radius: 1rem;
     border: 1px solid var(--cor-primaria);
     padding: 21.5px 0px;
     text-decoration: none;
@@ -113,15 +113,38 @@ strong {
 }
 
 .rodape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 24px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--font-secundaria);
     font-weight: 400;
     text-align: center;
     background: var(--cor-primaria);
-    height: 80px;
+    height: 5rem;
     color: var(--cor-terciaria);
 }
+
+@media (max-width: 1200px){
+    .cabecalho {
+        padding: 2% 0% 0% 0%;
+    }
+
+    .cabecalho-menu{
+        justify-content: center;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao-conteudo{
+        width:auto;
+    }
+
+    .foto_do_portfolio{
+        width: 60%;
+        height: auto;
+    }
+
+}
+
