@@ -135,6 +135,7 @@ strong {
     .apresentacao{
         flex-direction: column-reverse;
         padding: 5%;
+        gap: 40px;
     }
 
     .apresentacao-conteudo{
@@ -142,9 +143,21 @@ strong {
     }
 
     .foto_do_portfolio{
-        width: 60%;
+        width: 80%;
         height: auto;
     }
 
+}
+
+@media(max-width:600px){
+    .botoes{
+        gap: 2px;
+        font-size: 1rem;
+        padding: 15px 0px;
+    }
+
+    .foto_do_portfolio{
+        width: 80%;
+    }
 }
 
