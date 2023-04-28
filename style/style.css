@@ -39,7 +39,7 @@ body {
     box-sizing: border-box;
 }
 
-.apresentacao-conteudo-titulo{
+.apresentacao-conteudo-titulo {
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
@@ -75,7 +75,7 @@ strong {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 5px;
 }
 
 .botoes-links {
@@ -113,51 +113,50 @@ strong {
 }
 
 .rodape {
-    padding: 24px;
-    font-size: 1.5rem;
+    padding: 0.5%;
+    font-size: 1rem;
     font-family: var(--font-secundaria);
     font-weight: 400;
     text-align: center;
     background: var(--cor-primaria);
-    height: 5rem;
+    height: 0.5%;
     color: var(--cor-terciaria);
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     .cabecalho {
         padding: 2% 0% 0% 0%;
     }
 
-    .cabecalho-menu{
+    .cabecalho-menu {
         justify-content: center;
     }
-    
-    .apresentacao{
+
+    .apresentacao {
         flex-direction: column-reverse;
         padding: 5%;
         gap: 40px;
     }
 
-    .apresentacao-conteudo{
-        width:auto;
+    .apresentacao-conteudo {
+        width: auto;
     }
 
-    .foto_do_portfolio{
+    .foto_do_portfolio {
         width: 80%;
         height: auto;
     }
 
 }
 
-@media(max-width:600px){
-    .botoes{
+@media(max-width:600px) {
+    .botoes {
         gap: 2px;
         font-size: 1rem;
         padding: 15px 0px;
     }
 
-    .foto_do_portfolio{
+    .foto_do_portfolio {
         width: 80%;
     }
 }
-
